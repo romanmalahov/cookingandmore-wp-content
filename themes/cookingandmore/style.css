@@ -1,0 +1,1065 @@
+/*
+Theme Name: Cooking and More
+Theme URI: http://cookingandmore.com
+Description: Based on the original design for http://cookingandmore.com and the default WordPress theme based on the famous <a href="http://binarybonsai.com/kubrick/">Kubrick</a>.
+Version: 1.
+Author: Adam Kaye
+
+	Kubrick v1.5
+	 http://binarybonsai.com/kubrick/
+
+	This theme was designed and built by Michael Heilemann,
+	whose blog you will find at http://binarybonsai.com/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+
+/* Begin Typography & Colors */
+html {
+    height: 100%;
+    margin-bottom: 1px;
+}
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #ffffcc;
+	color: #000;
+	text-align: left;
+	}
+
+#page {
+	background-color: white;
+	border: 0;
+	text-align: left;
+	}
+
+#header {
+	background: #ffffcc;
+	}
+
+#headerimg 	{
+	margin: 0;
+	height: 128px;
+	width: 730px;
+	}
+
+#content {
+        font-family: arial, sans-serif;
+	font-size: 12px;
+        color: #62594d;
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.narrowcolumn .postmetadata {
+	text-align: center;
+	}
+
+.alt {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+#footer {
+	background: #ffffcc;
+	border: none;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	}
+
+#headerimg .description {
+	font-size: 1.2em;
+	text-align: center;
+        text-indent: -200000px;
+	}
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+	text-decoration: none;
+	color: #993333;
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #497390;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        font-weight: normal;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.entry p a:visited {
+	color: #9F3027;
+	}
+        
+.entry h4 {
+        color: #8d2c22;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 25px;
+        font-family: Georgia, serif;
+        text-align: left;
+}
+.entry h6 {
+	color: #497390;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 0;
+	}
+        
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist li .avatar { 
+	float: right;
+	border: 1px solid #eee;
+	padding: 2px;
+	background: #fff;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #011060;
+	}
+
+#sidebar a {
+    color: #fff;
+    font-size: 12px;
+}
+#sidebar a:hover { background-color: #0033d0; }
+
+#sidebar ul li h2 {
+    color: #777; margin-left: 10px;
+}
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h2 a:hover, h3 a:hover {
+	color: #a80c00;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #a80c00;
+	text-decoration: underline;
+	}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	margin: 0;
+	padding: 0;
+        background: #fff url('images/wide-bg4.jpg') top center repeat-y;
+	}
+
+#page {
+	/* background: #fff url('images/cooking-background-pattern3.jpg') 0 -1px repeat-y; */
+	margin: 20px auto 0 auto;
+	padding: 0;
+	width: 914px;
+	}
+
+#header {
+	margin: 0 auto;
+	padding: 0;
+	width: 914px;
+        height: 226px;
+        border: none;
+        background-color: #351601;/* 7b97ac;*/
+        border-bottom: 1px solid #908475;
+	}
+
+#headerimg {
+	margin: 0;
+	height: 188px;
+	width: 500px;
+        padding: 0;
+        border: none;
+	}
+#headerimg a img {
+	margin: 0;
+        padding: 0;
+        border: none;
+	}
+
+#socialmediaheader {
+    float: right;
+    width: 184px;
+    height: 128px;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+#socialmediaheader a img {
+    display: block;
+    float: right;
+    padding: 0;
+    margin: 0;
+    border: none;
+	
+}
+.facebook, .twitter{width:60px; float:right; position:relative; top:40px; right:40px;}
+
+#nav_bar {
+    width: 914px;
+    margin: 0;
+    padding: 0;
+    background-color: #351601;
+    height: 24px;
+}
+#header #nav_bar a {
+    font-family: Georgia, serif;
+    color: #e7b232;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    float: left;
+    margin: 0 0 0 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+#header #nav_bar img {
+    float: left;
+    margin: 0 0 0 14px;
+}
+#nav_links {
+    width: 914px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 34px;
+}
+#nav_links a {
+    color: #351601;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 34px;
+    margin: 0 10px 0 0;
+    float: right;
+    display: block;
+    text-decoration: none;
+}
+#nav_links img {
+    float: right;
+    margin: 0 10px 0 0;
+}
+#lt_blue_links {
+    height: 34px;
+    background-color: #aec7d8;
+    float: right;
+    text-align: center;
+    padding: 0 14px;
+}
+#lt_blue_links a {
+    float: none;
+    display: inline;
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+}
+#blue_lines {
+    height: 34px;
+    background: url('images/blue-diagonal-bg.gif') top left repeat-x;
+    float: right;
+    padding: 0 14px;
+    text-align: center;
+}
+#blue_lines a {
+    float: none;
+    display: inline;
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    color: #fff;
+}
+#red_lines {
+    height: 34px;
+    background: url('images/red-diagonal-bg.gif') top left repeat-x;
+    padding: 0 14px;
+    float: right;
+    text-align: center;
+}
+#red_lines a {
+    float: none;
+    display: inline;
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    color: #fff;
+}
+.narrowcolumn {
+	float: right;
+	padding: 25px 0 20px 0;
+	margin: 0px 30px 0 0;
+	width: 485px;
+	}
+
+.widecolumn {
+        float: right;
+	padding: 25px 0 20px 0;
+	margin: 0 30px 0 0;
+	width: 485px;
+	}
+
+.post {
+	margin: 0 0 40px;
+	text-align: justify;
+	}
+
+.post hr {
+	display: block;
+	}
+
+.widecolumn .post {
+	margin: 0;
+	}
+
+.narrowcolumn .postmetadata {
+	padding-top: 5px;
+	}
+
+.widecolumn .postmetadata {
+	margin: 30px 0;
+	}
+
+.widecolumn .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.widecolumn .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: left;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	padding: 0;
+	margin: 0 auto;
+	width: 914px;
+        background: #fff;
+	clear: both;
+	}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	}
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+	padding-top: 70px;
+	margin: 0;
+	}
+
+h2 {
+	margin: 0;
+        padding: 0;
+	}
+
+h2.pagetitle {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	}
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	}
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+#sidebar ul li a {
+    color: #000;
+}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 10px 8px;
+        color: #000;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+        
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 0;
+	padding: 0;
+        height: 19px;
+        float: right;
+	}
+
+#searchform #s {
+	width: 158px;
+        height: 17px;
+	padding: 0;
+        margin: 2px 3px 0 0;
+        border: 1px solid #cacaca;
+        border-top: 1px solid #848484;
+        border-left: 1px solid #848484;
+        float: right;
+	}
+
+#searchsubmit {
+        float: right;
+	padding: 0;
+        margin: 2px 3px 0 0;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#sidebar
+{
+	padding: 0 0 10px 0;
+	margin: 0;
+	width: 184px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+        
+
+#sidebar h3 {
+    display: block;
+    width: 184px;
+    height: 23px;
+    text-indent: -200000px;
+    margin: 0;
+    line-height: 23px;
+}
+#newsletter-archive {
+    text-align: left;
+    margin-bottom: 15px;
+}
+#newsletter-archive h3 {
+    background: #fff url('images/newsletter-archive.gif') top left no-repeat;
+    margin: 0;
+}
+#newsletter-archive ul {
+    margin: 10px 10px 10px 0;
+    padding-left: 20px;
+}
+#newsletter-archive ul li {
+    padding-bottom: 6px;
+    margin: 0;
+}
+#newsletter-archive ul li a {
+    color: #8c993c;
+    font-size: 11px;
+    text-decoration: underline;
+}
+#newsletter-archive ul li a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#magazine-articles {
+    text-align: center;
+}
+#magazine-articles h3 {
+    background: #fff url('images/magazine-articles.gif') top left no-repeat;
+    margin-bottom: 1px;
+}
+
+.quote p {
+    padding: 0 20px;
+    color: #a80c00;
+    font-size: 15px;
+    line-height: 22px;
+    font-style: italic;
+    font-family: Georgia, sans-serif;
+}
+
+/* End Sidebar */
+
+#sidebar2
+{
+	padding: 20px 0 10px 0;
+	margin: 0;
+	width: 184px;
+        float: right;
+	}
+
+
+#sidebar2 h3 {
+    display: block;
+    width: 184px;
+    height: 23px;
+    text-indent: -200000px;
+    margin: 0;
+}
+#sidebar2 h3.no_img {
+    text-indent: 0;
+    padding: 0;
+    color: #4d2f1a;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#recipe_categories {
+    width: 184px;
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+    border-top: 1px dotted #4d2f1a;
+}
+#recipe_categories li {
+    margin: 0;
+    padding: 0 0 0 20px;
+    height: 25px;
+    border-bottom: 1px dotted #4d2f1a;
+}
+#recipe_categories li a {
+    color: #4d2f1a;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#recipe_categories li a:hover {
+    color: #497390;
+}
+
+#book-release {
+    text-align: center;
+}
+#book-release h3 {
+    background: #fff url('images/book-release.gif') top left no-repeat;
+}
+
+#featured-recipe {
+    text-align: center;
+    margin: 0 0 15px;
+}
+#featured-recipe h3 {
+    background: #fff url('images/featured-recipe.gif') top left no-repeat;
+}
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+/* End Various Tags & Classes*/
+
+
+
+
+
+
+
+
+.post .entry p.recipehdr {
+    color: #a80c00;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/*.entry img {
+    border: 1px solid #4d2f1a;
+    padding: 3px;
+}*/
+
+.entry img {
+background: url(images/shadow.gif) no-repeat right bottom;
+padding: 4px 10px 10px 4px;
+border-top: #eee 1px solid;
+border-left: #eee 1px solid;
+margin-left: 20px;
+}
+
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */
+
+
+#print-link { float: right; }
+
+ul#published-articles {
+    list-style: none;
+}
+ul#published-articles li {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+ul#published-articles li a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+#post-209 .entry p a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/** ADDITIONS **/
+
+.book-release-countainer{
+	position:relative;
+	overflow:hidden;
+	min-height:400px;
+}
+.book-release-countainer h3{
+	/*background: #fff url('images/book-release.gif') top left no-repeat;*/
+}
+.book-release-countainer .control_next,
+.book-release-countainer .control_prev{
+	position:absolute;
+	top:80px;
+	width:20px;
+	height:20px;
+	color:#eee !important;
+	text-align:center;
+	line-height:1.7;
+	font-weight:bold;
+	background:rgba(0,0,0,0.6) !important;
+	text-decoration:none;
+	z-index:1000;
+}
+.book-release-countainer .control_next:hover,
+.book-release-countainer .control_prev:hover{
+	text-decoration:none;
+	color:#fff !important;
+	background:rgba(0,0,0,0.8) !important;
+}
+.book-release-countainer .control_next{
+	right:0;
+	border-radius:12px 0 0 12px;
+}
+.book-release-countainer .control_prev{
+	left:0;
+	border-radius:0 12px 12px 0;
+}
+.book-release-countainer ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	height:auto;
+	list-style:none;
+}
+.book-release-countainer ul li{
+	position:relative;
+	display:none;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+.book-release-countainer ul li.current{
+	display:block;
+}
+.book-release-countainer ul li .quote p{
+	/*margin:0 !important;*/
+	color:#a80c00 !important;
+}
+.cam-widget{
+	text-align:left;
+	margin-bottom:15px;
+}
+.cam-widget h3,
+.book-release-countainer h3{
+	text-indent:7px !important;
+	font-size:18px !important;
+	background-color:#523232;
+	line-height:1.4;
+}
+.cam-widget h3.green{
+	color:#9ba84b !important;
+}
+.cam-widget h3.white,
+.book-release-countainer h3.white{
+	color:#efefef !important;
+}
+.cam-widget ul{
+	margin:10px 10px 10px 0 !important;
+	padding-left:20px !important;
+}
+.cam-widget ul li{
+	list-style-type:disc !important;
+	margin-bottom:10px !important;
+}
+.cam-widget ul li a{
+	color:#8c993c !important;
+	font-size:11px !important;
+	text-decoration:underline !important;
+}
+.cam-widget ul li a:hover{
+	background-color:transparent !important;
+}
+
+.social-icons-in-sb{
+height: 50px;
+display: block;
+margin-bottom: 50px;
+margin-top: -40px;
+}
